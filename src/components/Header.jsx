@@ -6,8 +6,8 @@ const Header = () => {
   const [input, setInput] = useState("");
   const [city, setCity] = useState("Patna");
 
-  const { data } = useFectch(
-    `http://api.weatherapi.com/v1/current.json?key=5aeb33e759a140ada81140327232001&q=${city}&aqi=no`
+  const { data, isLoading } = useFectch(
+    `https://api.weatherapi.com/v1/current.json?key=5aeb33e759a140ada81140327232001&q=${city}&aqi=no`
   );
 
   const handleSubmit = (e) => {
@@ -33,6 +33,7 @@ const Header = () => {
           </button>
         </form>
       </div>
+      {isLoading && <h1>Loading...</h1>}
       {data && <WeatherDetails data={data} />}
     </>
   );
