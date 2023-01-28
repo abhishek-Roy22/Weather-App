@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;400;700&family=Rubik+Vinyl&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1534274988757-a28bf1a57c17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1935&q=80")
+    no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.container {
+  max-width: 80%;
+  width: 100%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .left {
+  font-family: "Rubik Vinyl", cursive;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.right input {
+  width: 70%;
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: black;
+  font-weight: bold;
+}
+
+.right button {
+  width: 30%;
+  border: none;
+  background-color: teal;
+  padding: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.weather {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.weather .weatherLeft {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Arima Madurai", cursive;
+}
+
+.weather .weatherRight {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.weatherRight .weatherContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.weatherRight .weatherContent span {
+  font-size: 1.5rem;
+}
